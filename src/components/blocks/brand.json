@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_brands",
+  "info": {
+    "displayName": "Brand"
+  },
+  "attributes": {
+    "brand_name": {
+      "type": "string",
+      "required": true
+    },
+    "brand_url": {
+      "type": "string"
+    },
+    "brand_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

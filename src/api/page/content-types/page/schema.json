@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "label",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.hero-section",
+        "sections.feature-list-section",
+        "sections.brand-section",
+        "sections.video-section",
+        "sections.review-section",
+        "sections.pricing-section",
+        "sections.featured-posts-section",
+        "sections.detail-section",
+        "sections.team-section",
+        "sections.faq-section",
+        "sections.stats-section",
+        "sections.about-intro",
+        "sections.redirect-section",
+        "sections.changelog-section",
+        "sections.all-posts-section",
+        "sections.documentation-home",
+        "sections.app-cta"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

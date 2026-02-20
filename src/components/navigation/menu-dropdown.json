@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_navigation_menu_dropdowns",
+  "info": {
+    "displayName": "Menu Dropdown"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.menu-item"
+    }
+  }
+}

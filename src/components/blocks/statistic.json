@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_statistics",
+  "info": {
+    "displayName": "Stat"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

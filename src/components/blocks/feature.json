@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_features",
+  "info": {
+    "displayName": "Feature"
+  },
+  "attributes": {
+    "feature_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_description": {
+      "type": "richtext"
+    },
+    "feature_icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

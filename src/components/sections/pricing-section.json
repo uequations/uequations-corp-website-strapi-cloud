@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_pricing_sections",
+  "info": {
+    "displayName": "Pricing Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "cards_yearly",
+        "mini_cards",
+        "minimal",
+        "feature_list",
+        "cards_gradient"
+      ],
+      "default": "cards_yearly",
+      "required": true
+    },
+    "pricing_section_header": {
+      "type": "string",
+      "required": true
+    },
+    "pricing_section_subheader": {
+      "type": "richtext"
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pricing-tier.pricing-tier"
+    }
+  }
+}

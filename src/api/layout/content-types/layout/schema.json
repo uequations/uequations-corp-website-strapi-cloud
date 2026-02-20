@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "layouts",
+  "info": {
+    "singularName": "layout",
+    "pluralName": "layouts",
+    "displayName": "Layout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "footer_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "main_color": {
+      "type": "string"
+    },
+    "footer_subtitle": {
+      "type": "richtext"
+    },
+    "footer_links": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::legal-page.legal-page"
+    },
+    "menu": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.menu-dropdown",
+        "navigation.menu-item"
+      ]
+    },
+    "notification": {
+      "type": "richtext"
+    },
+    "social_media_links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.social-media-icon"
+    }
+  }
+}

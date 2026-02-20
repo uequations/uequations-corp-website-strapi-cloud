@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_questions",
+  "info": {
+    "displayName": "Question"
+  },
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext"
+    }
+  }
+}

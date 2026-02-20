@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_documentation_home",
+  "info": {
+    "displayName": "Documentation Home"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "featured_pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::documentation-page.documentation-page"
+    }
+  }
+}

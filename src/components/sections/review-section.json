@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_review_sections",
+  "info": {
+    "displayName": "Testimonials Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "star_cards",
+        "card_carrousel",
+        "minimal_cards",
+        "minimal_carrousel",
+        "modern_carrousel"
+      ],
+      "default": "star_cards",
+      "required": true
+    },
+    "review_section_header": {
+      "type": "string",
+      "required": true
+    },
+    "review_section_subheader": {
+      "type": "richtext"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::testimonial.testimonial"
+    }
+  }
+}

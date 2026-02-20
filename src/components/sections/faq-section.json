@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_faq_sections",
+  "info": {
+    "displayName": "FAQ Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "accordion",
+        "grid"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "richtext"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.question"
+    }
+  }
+}

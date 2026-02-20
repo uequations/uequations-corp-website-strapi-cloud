@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_about_intros",
+  "info": {
+    "displayName": "About Intro"
+  },
+  "attributes": {
+    "pre_header": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "subheader": {
+      "type": "richtext"
+    },
+    "introduction_text": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_featured_posts_sections",
+  "info": {
+    "displayName": "Featured Posts Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "cards",
+        "carrousel",
+        "modern_cards",
+        "minimalist_grid",
+        "full_image_card"
+      ],
+      "default": "cards",
+      "required": true
+    },
+    "featured_posts_header": {
+      "type": "string",
+      "required": true
+    },
+    "featured_posts_subheader": {
+      "type": "richtext"
+    },
+    "featured_posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-post.blog-post"
+    }
+  }
+}

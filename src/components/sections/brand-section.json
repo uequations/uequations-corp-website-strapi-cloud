@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_brand_sections",
+  "info": {
+    "displayName": "Brand Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "brand_cards",
+        "main_color_block"
+      ],
+      "default": "brand_cards",
+      "required": true
+    },
+    "brands": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.brand"
+    }
+  }
+}

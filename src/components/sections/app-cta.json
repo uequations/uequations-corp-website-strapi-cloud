@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_app_cta",
+  "info": {
+    "displayName": "App CTA"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "appstore_url": {
+      "type": "string"
+    },
+    "google_play_url": {
+      "type": "string"
+    }
+  }
+}

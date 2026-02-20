@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_hero_sections",
+  "info": {
+    "displayName": "Hero Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "paralax",
+        "gradient",
+        "right_image",
+        "background_image",
+        "split_image"
+      ],
+      "default": "paralax",
+      "required": true
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true
+    },
+    "hero_subtitle": {
+      "type": "richtext"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.button"
+    }
+  }
+}

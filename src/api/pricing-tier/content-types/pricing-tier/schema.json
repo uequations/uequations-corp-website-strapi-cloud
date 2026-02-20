@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricing_tiers",
+  "info": {
+    "singularName": "pricing-tier",
+    "pluralName": "pricing-tiers",
+    "displayName": "Pricing Tier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tier_name": {
+      "type": "string",
+      "required": true
+    },
+    "monthly_price": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "yearly_price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "tier_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "plan_features": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "tier_name",
+      "required": true,
+      "unique": true
+    }
+  }
+}

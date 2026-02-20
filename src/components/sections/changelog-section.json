@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_changelog_sections",
+  "info": {
+    "displayName": "Changelog Section"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "richtext"
+    },
+    "featured_versions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::change-log.change-log"
+    }
+  }
+}

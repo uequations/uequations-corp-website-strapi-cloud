@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_detail_sections",
+  "info": {
+    "displayName": "Detail Section"
+  },
+  "attributes": {
+    "details": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "image_position": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left"
+    }
+  }
+}

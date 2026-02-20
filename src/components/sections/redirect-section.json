@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_redirect_sections",
+  "info": {
+    "displayName": "Redirect Section"
+  },
+  "attributes": {
+    "slug_to_redirect_to": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

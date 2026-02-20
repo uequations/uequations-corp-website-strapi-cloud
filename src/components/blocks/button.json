@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "primary": {
+      "type": "boolean"
+    }
+  }
+}

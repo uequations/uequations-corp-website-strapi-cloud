@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_feature_list_sections",
+  "info": {
+    "displayName": "Feature List Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "card",
+        "grid",
+        "big_image_horizontal",
+        "card_minimal",
+        "big_image_vertical"
+      ],
+      "default": "card",
+      "required": true
+    },
+    "features_header": {
+      "type": "string",
+      "required": true
+    },
+    "features_subheader": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.feature"
+    }
+  }
+}

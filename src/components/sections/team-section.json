@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_team_sections",
+  "info": {
+    "displayName": "Team Section"
+  },
+  "attributes": {
+    "display_option": {
+      "type": "enumeration",
+      "enum": [
+        "compact",
+        "expanded"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "richtext"
+    },
+    "showcased_members": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author"
+    }
+  }
+}
